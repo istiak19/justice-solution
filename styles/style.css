@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared styles */
+
+.flex {
+    display: flex;
+}
+
+/* Navbar styles parts */
+
+.navbar{
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 50px 250px;
+}
+
+.nav-text{
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-text img {
+    width: 44px;
+    height: 45px;
+}
+
+.nav-title{
+    font-size: 2.18rem;
+    font-weight: bolder;
+    color: rgba(65, 64, 64, 1);
+    margin-left: 15px;
+}
+
+.links{
+    list-style: none;
+    gap: 25px;
+}
+
+.link{
+    color: rgba(112, 112, 112, 1);
+}
+
+.btn{
+    background-color: #B68C5A;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 30px;
+    font-weight: 600;
+    color: white;
+}
+
+/* We Provide Effective Legal Solutions */
+
+.container-1{
+    text-align: center;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 250px;
+    border-radius: 16px;
+    padding: 100px 150px;
+}
+
+.content-title{
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-bottom: 22px;
+}
+
+.content-desco{
+    color: rgba(231, 231, 231, 1);
+    margin-bottom: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#search{
+    border-radius: 8px;
+    border: none;
+    padding: 20px 30px;
+    font-weight: 600;
+    width: 500px;
+}
+
+#search::placeholder{
+    color: rgba(160, 160, 160, 1);
+    font-weight: lighter;
+}
+/* Media and responsive */
+
+@media screen and ( max-width: 576px ) {
+    .navbar,
+    .links{
+        flex-direction: column;
+    }
+
+    .navbar{
+        margin: 50px;
+        gap: 30px;
+    }
+
+    .container-1 {
+        margin: 10px 0 ;
+        padding: 50px 20px;
+    }
+
+    #search{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
