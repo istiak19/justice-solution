@@ -111,6 +111,115 @@
     color: rgba(160, 160, 160, 1);
     font-weight: lighter;
 }
+
+/* The Legal Practice Area */
+
+.content1-title{
+    color: rgba(65, 64, 64, 1);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content1-desco{
+    color: rgba(112, 112, 112, 1);
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 60px 250px;
+    text-align: center;
+}
+
+.card-1,.card-2,.card-4,.card-5{
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+
+.card-1,.card-2,.card-3{
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    padding: 50px;
+}
+
+.card-2{
+    background-image: linear-gradient(#E7E7E7, rgba(243, 243, 243, 1.00));
+}
+
+.card-title{
+    font-size: 1.90rem;
+    font-weight: bolder;
+    color: rgba(65, 64, 64, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-desco{
+    color: rgba(112, 112, 112, 1);
+    font-size: 0.87rem;
+}
+
+span{
+    color: #B68C5A;
+    font-size: 1.5rem;
+}
+
+/* What Our Client Say */
+
+.content2-title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgba(65, 64, 64, 1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content2-desco{
+    font-size: 0.87rem;
+    color: rgba(112, 112, 112, 1);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 250px;
+    border-radius: 8px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 90px 50px;
+    text-align: center;
+}
+
+.box>img{
+    width: 70px;
+    height: 70px;
+}
+
+.box-title{
+    color: white;
+    font-size: 1.87rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.box-desco{
+    color: white;
+    margin: 0px 0;
+}
+
 /* Media and responsive */
 
 @media screen and ( max-width: 576px ) {
@@ -132,5 +241,15 @@
     #search{
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        margin: 60px 100px;
+    }
+
+    .card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+        border: none;
+        padding: 10px;
     }
 }
