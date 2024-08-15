@@ -17,20 +17,25 @@
 
 /* Shared styles */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .flex {
     display: flex;
 }
 
 /* Navbar styles parts */
 
-.navbar{
+.navbar {
     justify-content: center;
     align-items: center;
     gap: 80px;
     margin: 50px 250px;
 }
 
-.nav-text{
+.nav-text {
     justify-content: center;
     align-items: center;
 }
@@ -40,23 +45,23 @@
     height: 45px;
 }
 
-.nav-title{
+.nav-title {
     font-size: 2.18rem;
     font-weight: bolder;
     color: rgba(65, 64, 64, 1);
     margin-left: 15px;
 }
 
-.links{
+.links {
     list-style: none;
     gap: 25px;
 }
 
-.link{
+.link {
     color: rgba(112, 112, 112, 1);
 }
 
-.btn{
+.btn {
     background-color: #B68C5A;
     border-radius: 8px;
     border: none;
@@ -67,7 +72,7 @@
 
 /* We Provide Effective Legal Solutions */
 
-.container-1{
+.container-1 {
     text-align: center;
     background-image: url(../images/banner.png);
     background-position: center;
@@ -78,7 +83,7 @@
     padding: 100px 150px;
 }
 
-.content-title{
+.content-title {
     color: white;
     font-size: 4rem;
     font-weight: bolder;
@@ -86,12 +91,12 @@
     margin-bottom: 22px;
 }
 
-.content-desco{
+.content-desco {
     color: rgba(231, 231, 231, 1);
     margin-bottom: 30px;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,7 +104,7 @@
     gap: 20px;
 }
 
-#search{
+#search {
     border-radius: 8px;
     border: none;
     padding: 20px 30px;
@@ -107,14 +112,14 @@
     width: 500px;
 }
 
-#search::placeholder{
+#search::placeholder {
     color: rgba(160, 160, 160, 1);
     font-weight: lighter;
 }
 
 /* The Legal Practice Area */
 
-.content1-title{
+.content1-title {
     color: rgba(65, 64, 64, 1);
     font-size: 2.5rem;
     font-weight: bolder;
@@ -122,12 +127,12 @@
     margin-bottom: 24px;
 }
 
-.content1-desco{
+.content1-desco {
     color: rgba(112, 112, 112, 1);
     text-align: center;
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -136,23 +141,33 @@
     text-align: center;
 }
 
-.card-1,.card-2,.card-4,.card-5{
+.card-1,
+.card-2,
+.card-4,
+.card-5 {
     border-right: 1px solid rgba(231, 231, 231, 1);
 }
 
-.card-1,.card-2,.card-3{
+.card-1,
+.card-2,
+.card-3 {
     border-bottom: 1px solid rgba(231, 231, 231, 1);
 }
 
-.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
     padding: 50px;
 }
 
-.card-2{
+.card-2 {
     background-image: linear-gradient(#E7E7E7, rgba(243, 243, 243, 1.00));
 }
 
-.card-title{
+.card-title {
     font-size: 1.90rem;
     font-weight: bolder;
     color: rgba(65, 64, 64, 1);
@@ -160,19 +175,19 @@
     margin-bottom: 20px;
 }
 
-.card-desco{
+.card-desco {
     color: rgba(112, 112, 112, 1);
     font-size: 0.87rem;
 }
 
-span{
+span {
     color: #B68C5A;
     font-size: 1.5rem;
 }
 
 /* What Our Client Say */
 
-.content2-title{
+.content2-title {
     font-size: 2.5rem;
     font-weight: bolder;
     color: rgba(65, 64, 64, 1);
@@ -180,14 +195,14 @@ span{
     text-align: center;
 }
 
-.content2-desco{
+.content2-desco {
     font-size: 0.87rem;
     color: rgba(112, 112, 112, 1);
     text-align: center;
     margin-bottom: 60px;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
     background-image: url(../images/banner.png);
@@ -202,12 +217,12 @@ span{
     text-align: center;
 }
 
-.box>img{
+.box>img {
     width: 70px;
     height: 70px;
 }
 
-.box-title{
+.box-title {
     color: white;
     font-size: 1.87rem;
     font-weight: bolder;
@@ -215,13 +230,13 @@ span{
     margin: 0;
 }
 
-.box-desco{
+.box-desco {
     color: white;
     line-height: 10px;
     margin: 0;
 }
 
-.box-desco-1{
+.box-desco-1 {
     color: white;
     line-height: 20px;
     margin: 0;
@@ -230,78 +245,85 @@ span{
 
 /* Frequently Asked Any Questions */
 
-.boxs{
+.boxs {
     justify-content: center;
     align-items: center;
     margin: 0 250px;
     gap: 30px;
 }
 
-.boxs>img{
+.boxs>img {
     width: 100%;
     height: 570px;
 }
 
-.boxs-1{
+.boxs-1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.box-111{
+.box-111 {
     background-color: rgb(241, 235, 235);
     padding: 15px 25px;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
-.box-11{
+.box-11 {
     background-color: rgb(241, 235, 235);
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
-.b11-title{
+.b11-title {
     color: rgba(65, 64, 64, 1);
     font-size: 1.25rem;
     font-weight: bolder;
     margin-bottom: 10px;
 }
 
-.b11-desco{
+.b11-desco {
     color: rgba(112, 112, 112, 1);
     font-size: 0.87rem;
 }
 
 /* Contact With Us */
 
-.important{
+.important {
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.imports{
+.imports {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.import,.import-1,.import-2,.import-3{
+.import,
+.import-1,
+.import-2,
+.import-3 {
     text-align: center;
     background-color: rgb(241, 235, 235);
-    padding: 50px;
+    padding: 80px;
 }
 
-.import,.import-2{
+.import,
+.import-2 {
     border-right: 1px solid rgba(207, 207, 207, 1);
 }
 
-.import,.import-1{
-    border-bottom: 1px solid rgba(207, 207, 207, 1) ;
+.import,
+.import-1 {
+    border-bottom: 1px solid rgba(207, 207, 207, 1);
 }
 
-#text,#email,#subject{
+#text,
+#email,
+#subject {
     width: 570px;
     padding: 23px 0 23px 23px;
     background-color: rgb(241, 235, 235);
@@ -310,7 +332,7 @@ span{
     margin-bottom: 30px;
 }
 
-#message{
+#message {
     width: 570px;
     padding: 23px 0 100px 23px;
     background-color: rgb(241, 235, 235);
@@ -319,7 +341,7 @@ span{
     margin-bottom: 30px;
 }
 
-.btn-1{
+.btn-1 {
     background-color: #B68C5A;
     border: none;
     border-radius: 8px;
@@ -328,14 +350,55 @@ span{
     font-weight: 500;
 }
 
+/* Footer styles */
+
+.foot {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 120px 180px;
+    margin-top: 100px;
+    background-color: rgba(17, 17, 17, 1);
+}
+
+.f-desco {
+    color: rgba(207, 207, 207, 1);
+    font-size: 0.87rem;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.f-title {
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.f-links {
+    list-style: none;
+}
+
+.link-1 {
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+#email-1 {
+    padding: 23px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
 
 /* Media and responsive */
 
-@media screen and ( max-width: 576px ) {
+@media screen and (max-width: 576px) {
+
     .navbar,
     .links,
     .boxs,
-    .important {
+    .important,
+    .foot {
         flex-direction: column;
     }
 
@@ -346,21 +409,26 @@ span{
     }
 
     .container-1 {
-        margin: 10px 0 ;
+        margin: 10px 0;
         padding: 50px 20px;
     }
 
-    #search{
+    #search {
         width: 100%;
         margin-bottom: 15px;
     }
 
-    .cards{
+    .cards {
         grid-template-columns: 1fr;
         margin: 60px 100px;
     }
 
-    .card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6 {
         border: none;
         padding: 10px;
     }
@@ -369,20 +437,27 @@ span{
         margin: 0;
     }
 
-    .boxs-img>img{
+    .boxs-img>img {
         width: 350px;
         height: 350px;
     }
 
-    #text,#email,#subject,#message{
+    #text,
+    #email,
+    #subject,
+    #message {
         width: 300px;
     }
 
-    .imports{
+    .imports {
         grid-template-columns: 1fr;
     }
 
-    .btn-1{
+    .btn-1 {
         padding: 20px;
+    }
+
+    .foot{
+        padding: 30px;
     }
 }
