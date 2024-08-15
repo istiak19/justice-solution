@@ -211,24 +211,136 @@ span{
     color: white;
     font-size: 1.87rem;
     font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    line-height: 10px;
+    margin: 0;
 }
 
 .box-desco{
     color: white;
-    margin: 0px 0;
+    line-height: 10px;
+    margin: 0;
 }
+
+.box-desco-1{
+    color: white;
+    line-height: 20px;
+    margin: 0;
+    font-size: 0.87rem;
+}
+
+/* Frequently Asked Any Questions */
+
+.boxs{
+    justify-content: center;
+    align-items: center;
+    margin: 0 250px;
+    gap: 30px;
+}
+
+.boxs>img{
+    width: 100%;
+    height: 570px;
+}
+
+.boxs-1{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-111{
+    background-color: rgb(241, 235, 235);
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.box-11{
+    background-color: rgb(241, 235, 235);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.b11-title{
+    color: rgba(65, 64, 64, 1);
+    font-size: 1.25rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.b11-desco{
+    color: rgba(112, 112, 112, 1);
+    font-size: 0.87rem;
+}
+
+/* Contact With Us */
+
+.important{
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imports{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.import,.import-1,.import-2,.import-3{
+    text-align: center;
+    background-color: rgb(241, 235, 235);
+    padding: 50px;
+}
+
+.import,.import-2{
+    border-right: 1px solid rgba(207, 207, 207, 1);
+}
+
+.import,.import-1{
+    border-bottom: 1px solid rgba(207, 207, 207, 1) ;
+}
+
+#text,#email,#subject{
+    width: 570px;
+    padding: 23px 0 23px 23px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+#message{
+    width: 570px;
+    padding: 23px 0 100px 23px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.btn-1{
+    background-color: #B68C5A;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 250px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
 
 /* Media and responsive */
 
 @media screen and ( max-width: 576px ) {
     .navbar,
-    .links{
+    .links,
+    .boxs,
+    .important {
         flex-direction: column;
     }
 
-    .navbar{
+    .navbar,
+    .boxs {
         margin: 50px;
         gap: 30px;
     }
@@ -251,5 +363,26 @@ span{
     .card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
         border: none;
         padding: 10px;
+    }
+
+    .box {
+        margin: 0;
+    }
+
+    .boxs-img>img{
+        width: 350px;
+        height: 350px;
+    }
+
+    #text,#email,#subject,#message{
+        width: 300px;
+    }
+
+    .imports{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-1{
+        padding: 20px;
     }
 }
